@@ -20,11 +20,14 @@
         }
     ],
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "require": {
-        "php": "^7.3",
-        "laravel/framework": "^8.0"
+        "php": "^7.3 || ^8.0",
+        "laravel/framework": "^10.3"
     },
     "require-dev": {
         "slevomat/coding-standard": "^8.3",

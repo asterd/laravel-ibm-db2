@@ -10,7 +10,6 @@ use GuidoFaecke\DB2\Queue\DB2Connector;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Lumen\Application as LumenApplication;
 
 /**
  * Class DB2ServiceProvider
@@ -111,8 +110,6 @@ class DB2ServiceProvider extends ServiceProvider
     {
         if ($this->app instanceof LaravelApplication) {
             return config_path('db2.php');
-        } elseif ($this->app instanceof LumenApplication) {
-            return base_path('config/db2.php');
         }
     }
 
